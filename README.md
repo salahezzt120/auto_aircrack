@@ -12,7 +12,7 @@ This Python script automates the process of:
 ## 🚀 Usage
 ```bash
 sudo ./auto_aircrack_lab.py wlan0
-
+```
 ⚙️ Requirements
 
 Python 3
