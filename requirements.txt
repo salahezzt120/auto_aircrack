@@ -1,0 +1,16 @@
+# WiFi Handshake Capture & Cracking Tool Requirements
+
+# Core Python dependencies
+scapy
+pycryptodome
+termcolor
+
+# For subprocess handling (already built-in, but keep for clarity)
+subprocess-run
+psutil
+
+# Optional - for parsing .cap and hashcat conversions
+pyshark
+
+# Optional - progress bars and UX
+tqdm
