@@ -28,7 +28,7 @@ SESSION_DIR.mkdir(parents=True, exist_ok=True)
 # ---------------- UTILS ----------------
 def banner():
     print(Fore.CYAN + Style.BRIGHT + "\n" + "="*65)
-    print(Fore.YELLOW + Style.BRIGHT + "     🔥 WiFi Handshake Toolkit (Educational / Lab Use Only) 🔥")
+    print(Fore.YELLOW + Style.BRIGHT + "     🔥 WiFi Handshake Toolkit (Educational / Lab Use Only)  Sklans🔥")
     print(Fore.CYAN + Style.BRIGHT + "="*65 + "\n")
 
 def run(cmd, check=True, background=False, **kwargs):
@@ -312,3 +312,4 @@ def main():
 
 if __name__=="__main__":
     main()
+
