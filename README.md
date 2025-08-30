@@ -1,3 +1,24 @@
+# 🔥 WiFi Handshake Toolkit  
+
+![Version](https://img.shields.io/badge/version-1.0-blue)  
+![License](https://img.shields.io/badge/license-MIT-green)  
+![Status](https://img.shields.io/badge/status-In_Progress-yellow)  
+![Python](https://img.shields.io/badge/Python-3.x-orange)  
+![Aircrack-ng](https://img.shields.io/badge/Dependencies-Aircrack--ng-red)  
+![Scapy](https://img.shields.io/badge/Scapy-Network_Tools-purple)  
+
+---
+
+## 📋 Project Description  
+An **automated WiFi handshake capture, cracking, and conversion toolkit** built with Python.  
+Designed for **educational & lab use only**, it provides a simple interactive terminal GUI with colorful menus, target selection, and built-in cracking support.  
+
+---
+
+## 🖼️ Banner  
+![WiFi Toolkit Banner](banner)  
+
+
 # Wi-Fi Handshake Capture & Cracking Tool
 
 This tool automates Wi-Fi penetration testing tasks such as scanning networks, capturing handshakes, converting them, and cracking WPA/WPA2 handshakes using `aircrack-ng` and `hashcat`.
