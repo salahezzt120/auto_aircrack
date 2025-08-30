@@ -1,27 +1,56 @@
-# auto_aircrack_lab.py
-⚡ Automated WiFi Handshake Capture & Cracking (for **legal lab testing only**) ⚡
+# Wi-Fi Handshake Capture & Cracking Tool
 
-## 📌 About
-This Python script automates the process of:
-- Enabling monitor mode
-- Scanning for nearby WiFi networks
-- Capturing WPA/WPA2 handshakes
-- Detecting EAPOL packets
-- Attempting to crack captured handshakes with a given wordlist
+This tool automates Wi-Fi penetration testing tasks such as scanning networks, capturing handshakes, converting them, and cracking WPA/WPA2 handshakes using `aircrack-ng` and `hashcat`.
 
-## 🚀 Usage
+## Features
+- Scan available Wi-Fi networks
+- Select target network
+- Capture WPA/WPA2 handshakes
+- Convert handshakes to `.hc22000` format for Hashcat
+- Crack captured handshakes with `aircrack-ng`
+- Retry deauthentication to capture full EAPOL handshakes
+- Save cracked credentials (ESSID, BSSID, password) into a file
+- Interactive menu system
+- Re-select target without rescanning
+
+## Requirements
+Ensure you have the following installed:
+
 ```bash
-sudo ./auto_aircrack_lab.py wlan0
+sudo apt update && sudo apt install -y aircrack-ng hashcat python3 python3-pip
+pip3 install -r requirements.txt
 ```
-⚙️ Requirements
 
-Python 3
+## Usage
+Run the script with:
 
-aircrack-ng suite
+```bash
+sudo python3 main.py
+```
 
-scapy (pip install scapy)
+### Menu Options
+```
+=== Next Step ===
+1. Crack captured handshakes
+2. Convert handshakes to .hc22000
+3. Retry deauth to capture full EAPOL handshake
+4. Settings
+5. Rescan
+6. Exit
+7. Re-select target
+```
 
-⚠️ Disclaimer
+## Output
+Cracked results are saved automatically in:
+```
+cracked_wifi.txt
+```
 
-This tool is for educational and research purposes only.
-Use it only on networks you own or have explicit permission to test.
+## Notes
+- You must run this script with **root privileges** (`sudo`).
+- Use this tool **only on networks you own or have permission to test**. Unauthorized use is illegal.
+
+---
+
+### Disclaimer
+This project is for **educational purposes only**. The author is not responsible for misuse.
